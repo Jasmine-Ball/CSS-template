@@ -1,0 +1,78 @@
+* {
+    background-color: whitesmoke;
+    margin-top : 0%;
+}
+
+p {
+    padding: 10px;
+    background-color: olive;
+    margin: 5px;
+}
+
+.Left_Top {
+    grid-area: leftTop;
+}
+
+.Top_Bar_L {
+    grid-area: topBarL;
+    background-color: lightsteelblue;
+    min-width: 200px;
+    height: 52px;
+    text-align: left;
+    
+}
+
+.Bar_Items {
+    position: relative;
+    height: 20px;
+    top: 30%;
+    bottom: 30%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.Top_Bar_R {
+    grid-area: topBarR;
+    background-color: lightsteelblue;
+    min-width: 200px;
+    height: 52px;
+    text-align: right;
+}
+
+.Body {
+    grid-area: body;
+    padding-left: 500px;
+    padding-right: 500px;
+    background-color: lightsteelblue;
+    height: 400px;
+}
+
+.Panel {
+    background-color: pink;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.Body_Low {
+    grid-area: bodyLow;
+}
+
+.Footer {
+    grid-area: footer;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-areas: 
+    'leftTop topBarL topBarR rightTop'
+    'body body body body'
+    'bodyLow bodyLow bodyLow bodyLow'
+    'footer footer footer footer';
+    grid-gap: 1px;
+    background-color: darkgray;
+}
+
+.grid_container > div {
+    padding: 1px;
+}
